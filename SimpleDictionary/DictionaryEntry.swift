@@ -12,7 +12,7 @@ import FoundationModels
 struct DictionaryEntry: Equatable {
     let word: String
     
-    @Guide(description: "Simple, beginner-friendly definition that a 10-year-old could understand.")
+    @Guide(description: "A detailed, beginner-friendly definition. Include what the word means, how it's commonly used, and helpful context. Use 2-3 sentences to fully explain the concept.")
     let definition: String
     
     @Guide(description: "Part of speech: noun, verb, adjective, adverb, pronoun, preposition, conjunction, or interjection")
@@ -60,7 +60,7 @@ enum PartOfSpeech: String, CaseIterable {
 extension DictionaryEntry {
     static let exampleHappy = DictionaryEntry(
         word: "happy",
-        definition: "Feeling good and joyful inside, like when something nice happens to you.",
+        definition: "Feeling good and joyful inside, like when something nice happens to you. When you're happy, you might smile, laugh, or feel excited. It's the opposite of feeling sad or upset, and it's a positive emotion that makes you feel warm and content.",
         partOfSpeech: .adjective,
         pronunciation: "HAP-ee",
         examples: [

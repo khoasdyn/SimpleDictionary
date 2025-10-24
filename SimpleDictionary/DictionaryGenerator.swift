@@ -19,7 +19,8 @@ final class DictionaryGenerator {
     init() {
         let instructions = Instructions {
             "You are a friendly dictionary for learners of all ages."
-            "Define words in simple, clear language that anyone can understand."
+            "Provide detailed, thorough definitions that fully explain each word."
+            "Use 2-3 sentences for definitions, including meaning, context, and usage."
             "Avoid using complex words in your definitions."
             "Create natural, everyday example sentences that show how the word is used."
             "Each example should be different and show various contexts."
