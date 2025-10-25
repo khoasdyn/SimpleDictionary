@@ -84,6 +84,16 @@ struct DefinitionCard: View {
                 }
             }
             
+            if let emojis = entry.emojis {
+                HStack(spacing: 8) {
+                    ForEach(emojis, id: \.self) { emoji in
+                        Text(emoji)
+                            .font(.title)
+                    }
+                }
+                .padding(.vertical, 4)
+            }
+            
             // Part of speech tag
             if let pos = entry.partOfSpeech {
                 Text(pos.rawValue)
