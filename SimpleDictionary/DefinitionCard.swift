@@ -2,7 +2,7 @@
 //  DefinitionCard.swift
 //  SimpleDictionary
 //
-//  Refactored from DictionaryView.swift
+//  Refactored from MainView.swift
 //
 
 import SwiftUI

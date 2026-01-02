@@ -1,5 +1,5 @@
 //
-//  DictionaryView.swift
+//  MainView.swift
 //  SimpleDictionary
 //
 //  Created by khoasdyn on 24/10/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DictionaryView: View {
+struct MainView: View {
     @State private var generator = DictionaryGenerator()
     @State private var searchWord = ""
     @State private var isSearching = false
@@ -20,6 +20,7 @@ struct DictionaryView: View {
                     TextField("Enter a word to define", text: $searchWord)
                         .textFieldStyle(.roundedBorder)
                         .autocapitalization(.none)
+                        .autocorrectionDisabled()
                         .disabled(isSearching)
                     
                     Button {
